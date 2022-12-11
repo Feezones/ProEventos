@@ -1,0 +1,34 @@
+comandos gerais >
+	cd.. - volta um diretorio
+	cd:nome - avança para o diretorio(tab = auto complete)
+	ctrl+shift+p = abre a pesquisa do visual studio
+	ctrl + d = seleciona todos os itens selecionados	
+
+comandos dotnet >
+	
+
+	dotnet build - compila o projeto
+	dotnet watch run - roda dotnet atualizando
+
+	dotnet new sln -n "nome" - cria uma solution com o nome "nome"
+
+	dotnet new classlib -n "nome".Persistence - biblioteca de classe
+	dotnet new classlib -n "nome".domain - biblioteca de classe
+	dotnet new classlib -n "nome".Application - biblioteca de classe
+
+	dotnet sln "nome".sln add "nome".Persistence - adiciona a classe a solution
+	dotnet sln "nome".sln add "nome".Domain - adiciona a classe a solution
+	dotnet sln "nome".sln add "nome".Api - adiciona a classe a solution
+	dotnet sln "nome".sln add "nome".Application - adiciona a classe a solution
+
+	dotnet add ProEventos.API/ProEventos.API.csproj reference ProEventos.Application - gera referencia do application para o ProEventos.API / outras referencias feitas na mao
+
+	dotnet ef migrations add Initial -p ProEventos.Persistence -s ProEventos.API - prepara os arquivos para criar o banco, 
+											"-p" procura o direto q estiver o arquivo de dbcontext, 
+											"-s" procura o diretorio principal do projeto
+
+	dotnet ef database update -s ProEventos.API - cria o banco de dados
+
+comandos angular > 
+	npm start - inicia o projeto
+	ng g c "nome" - cria um componente o nome de "nome"
